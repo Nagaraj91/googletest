@@ -20,7 +20,7 @@ public class Screenshottest {
             
     }
     @AfterMethod
-    public void teardown() throws IOException {
+    public void screen() throws IOException {
         // TODO Auto-generated method stub
         File src=((TakesScreenshot)WD).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(src, new File("C:\\Users\\Akash\\workspace\\Google\\src\\test\\java\\Screenshot"));
